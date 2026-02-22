@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"target": "es2022",
+		"checkJs": true,
+		"allowJs": true,
+		"jsx": "react-jsx",
+		"baseUrl": ".",
+		"paths": {
+			"*": ["node_modules/", "types/"]
+		},
+		"allowSyntheticDefaultImports": true,
+		"allowImportingTsExtensions": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strict": true
+	},
+	"include": [
+		"**/*.js",
+		"**/*.mjs"
+	],
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*"
+	]
+}

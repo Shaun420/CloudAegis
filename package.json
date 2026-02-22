@@ -1,0 +1,41 @@
+{
+  "name": "cloudaegis",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Secure Private File Storage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "8.2.1",
+    "helmet": "^8.1.0",
+    "multer": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shaun420/CloudAegis.git"
+  },
+  "keywords": [
+    "cloud",
+    "file-host"
+  ],
+  "author": "Shaun420",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shaun420/CloudAegis/issues"
+  },
+  "homepage": "https://github.com/Shaun420/CloudAegis#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^25.3.0",
+    "eslint": "^10.0.1",
+    "globals": "^17.3.0"
+  }
+}

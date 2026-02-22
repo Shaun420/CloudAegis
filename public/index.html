@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure File Host</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔒 Secure File Host</h1>
+      <p>End-to-end encrypted file storage</p>
+    </div>
+    
+    <div class="content">
+      <div id="status" class="status"></div>
+      
+      <div class="upload-section">
+        <h2>Upload File</h2>
+        <p class="upload-section-subheading">
+          Files are encrypted with AES-256-GCM before storage
+        </p>
+        <input type="file" id="fileInput" />
+        <button id="chooseBtn" class="upload-btn">
+          Choose File
+        </button>
+        <button id="uploadBtn" class="upload-btn">
+          Upload
+        </button>
+        <p id="selectedFile"></p>
+      </div>
+      
+      <div class="file-list">
+        <h2>Your Files</h2>
+        <div id="filesList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
