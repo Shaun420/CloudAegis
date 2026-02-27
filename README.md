@@ -8,3 +8,19 @@ Secure Private File Storage
 | Storage | Local filesystem (encrypted) |
 | Auth | Custom header validation middleware |
 | Frontend | Vanilla HTML/CSS/JS |
+
+## Windows Setup
+Run PowerShell as Administrator
+```code
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+Navigate to project
+```code
+cd C:\path\to\cloudaegis
+```
+
+Run setup
+```code
+.\scripts\windows-setup.ps1
+```
