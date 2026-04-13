@@ -1,0 +1,32 @@
+name: CloudAegis CI Pipeline
+
+# 1. When should this run?
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+# 2. What should it do?
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Grab the code from the repository
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # Install Node.js on the temporary runner
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+
+    # Install app's dependencies
+    - name: Install Dependencies
+      run: npm install
+
+    # Run linter to check for code quality
+    - name: Run ESLint
+      run: npx eslint .
