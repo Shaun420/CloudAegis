@@ -149,3 +149,4 @@ ssl/*
 
 # uploads
 uploads/*
+package-lock.json
